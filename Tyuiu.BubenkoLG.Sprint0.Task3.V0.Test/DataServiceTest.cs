@@ -1,5 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using Tyuiu.BubenkoLG.Sprint0.Task3.V0.Lib;
+
 
 namespace Tyuiu.BubenkoLG.Sprint0.Task3.V0.Test
 {
@@ -7,8 +9,9 @@ namespace Tyuiu.BubenkoLG.Sprint0.Task3.V0.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TCheckedValid()
         {
+            Assert.AreEqual(10, DataService.Sum(5, 5));
         }
     }
 }
